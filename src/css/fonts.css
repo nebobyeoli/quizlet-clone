@@ -1,0 +1,25 @@
+@font-face {
+    font-family: '배달의민족연성';
+    src: url('../../resources/fonts/BMYEONSUNG_otf.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: url('../../resources/fonts/SeoulNamsan/SeoulNamsanEB.otf') format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: url('../../resources/fonts/SeoulNamsan/SeoulNamsanB.otf') format('opentype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: url('../../resources/fonts/SeoulNamsan/SeoulNamsanM.otf') format('opentype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: url('../../resources/fonts/SeoulNamsan/SeoulNamsanL.otf') format('opentype');
+    font-weight: 100;
+}
