@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Layout</title>
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            /* height: 100%; */
+            --height: 100%;
+            --hhead: 5rem;
+
+            font-family: '서울남산체';
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        div {
+            border: solid 1px;
+            /* padding: .2rem;
+            margin: .2rem; */
+        }
+
+        .head {
+            height: var(--hhead);
+            display: block;
+        }
+        .body {
+            display: flex;
+        }
+        
+        div {
+            font-size: 2rem;
+        }
+
+        .head, .body, .panel-left, .panel-center {
+            font-size: .8rem;
+        }
+
+        .body {
+            height: calc(var(--height) - var(--hhead) - 4px);
+        }
+        .panel-left {
+            width: 6rem;
+        }
+        .panel-center {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        .one, .two {
+            height: 4rem;
+            border: 2px dotted;
+            padding: 0.5rem;
+        }
+        
+        .head, .body {
+            border-color: blue;
+        }
+        .ribbon-top, .panel-left, .panel-center {
+            border-color: red;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class='head'>
+        head
+        <div class='ribbon-top'>ribbon-top</div>
+    </div>
+    <div class='body'>
+        body
+        <div class='panel-left'>panel-left</div>
+
+        <div class='panel-center'>
+            panel-center
+            <div style='border: 1px dashed; padding: 0.5rem;'>
+                <p>Recent</p>
+                <p>Recent</p>
+                <div style='border: 1px dotted;'>div</div>
+                <div style='border: 1px dotted;'>div</div>
+            </div>
+            <p>Recent</p>
+        </div>
+    </div>
+</body>
+</html>

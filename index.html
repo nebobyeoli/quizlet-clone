@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -29,31 +29,42 @@
 </head>
 
 <body>
-    <div class='ribbon-top va'>
-        <button class='quizlet'> <span id='quizlet'></span> </button>
-        <button class='search' > <span id='search' ></span> </button> <span class='pipe no-select'>|</span>
-        <button class='create' > <span id='create' ></span> </button>
+    <div class='head'>
+        <div class='va ribbon-top'>
+            <button class='quizlet'> <span id='quizlet'></span> </button>
+            <button class='search' > <span id='search' ></span> </button> <span class='pipe no-select'>|</span>
+            <button class='create' > <span id='create' ></span> </button>
+        </div>
     </div>
 
-    <div class='panel-left'>
+    <div class='body'>
+        <div class='panel-left'>
 
-        <div class='panel-list'>
-            <div class='va panel-item'> <span id='home'    ></span> Home    </div>
-            <div class='va panel-item'> <span id='progress'></span> Progress</div>
+            <div class='panel-list'>
+                <div class='va panel-item'> <span id='home'    ></span> Home    </div>
+                <div class='va panel-item'> <span id='progress'></span> Progress</div>
+            </div>
+
+            <div class='panel-list'>
+                <div class='va panel-item'> <span id='sets'    ></span> Sets    </div>
+
+                <div class='va panel-item'> <span id='folders' ></span> Folders </div>
+                <div class='va panel-item'> <span class='float'></span> 워드마스터</div>
+                <div class='va panel-attr'> <span class='float'></span> Create a folder</div>
+
+                <div class='va panel-item'> <span id='classes' ></span> Classes </div>
+                <div class='va panel-attr'> <span class='float'></span> Join or create a class</div>
+            </div>
+
         </div>
 
-        <div class='panel-list'>
-            <div class='va panel-item'> <span id='sets'    ></span> Sets    </div>
-
-            <div class='va panel-item'> <span id='folders' ></span> Folders </div>
-            <div class='va panel-item'> <span class='float'></span> 워드마스터</div>
-            <div class='va panel-attr'> <span class='float'></span> Create a folder</div>
-
-            
-            <div class='va panel-item'> <span id='classes' ></span> Classes </div>
-            <div class='va panel-attr'> <span class='float'></span> Join or create a class</div>
+        <div class='panel-center'>
+            <div>
+                <div class='panel-list'>
+                    <div class='panel-item'>Recent</div>
+                </div>
+            </div>
         </div>
-
     </div>
 
     <script src='src/append.js'></script>
