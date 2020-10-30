@@ -6,95 +6,8 @@
     <meta charset='UTF-8'>
     <title>Layout</title>
 
-    <style>
-        html, body {
-            height: 100%;
-        }
-
-        body {
-            font-family: '서울남산체';
-            font-weight: 300;
-            font-size: 1.2rem;
-            margin: 0;
-
-            --ribbon-height: 5rem;
-        }
-
-        div {
-            font-size: 1.2rem;
-        }
-
-        .head, .body, .panel-left, .faux-center {
-            border: solid 1px;
-            font-size: .8rem;
-        }
-
-        .head {
-            display: block;
-            height: var(--ribbon-height);
-            border-color: blue;
-        }
-
-        .body {
-            display: flex;
-            min-height: calc(100% - var(--ribbon-height));
-            border-color: blue;
-        }
-
-        .panel-left {
-            width: 12rem;
-        }
-
-        .ribbon-top, .panel-left, .panel-center {
-            border-color: red;
-        }
-
-        div.faux-center {
-            border: 2px dashed gray;
-            display: block;
-            width: 55%;
-        }
-
-        div.panel-center {
-            display: block;
-            padding: 2.6rem;
-            /* padding: 2.6rem 0 0 max(2.6rem, 15%); */
-            margin: .1rem;
-            /* width: 55%; */
-        }
-
-        .panel-center .panel-list {
-            border: 1px dotted pink;
-            padding: .1rem;
-        }
-
-        div.panel-center div.panel-item {
-            display: block;
-            border: 1px dotted;
-            margin-bottom: 2.2rem;
-            /* width: 60vw; */
-        }
-
-        div.panel-center div.cardbox {
-            display: flex;
-            flex-flow: row wrap;
-            /* width: 80%; */
-            /* align-content: space-between; */
-            /* justify-content: space-between; */
-
-            border: 1px solid coral;
-            margin-top: 1rem;
-        }
-
-        div.panel-center div.cardset {
-            width: min(18rem, 45%);
-            /* width: 28vw; */
-            height: 9.4rem;
-            margin: 0 .6rem .6rem 0;
-
-            border: 1px dotted blueviolet;
-        }
-    </style>
+    <link rel='stylesheet' href='src/css/fonts.css'>
+    <link rel='stylesheet' href='src/css/layout.css'>
 </head>
 <body>
     <div class='head'>
@@ -110,8 +23,12 @@
                 panel-center
                 <div class='panel-center'>
                     <div class='panel-list'>
+                        <span class='small'>itemhead | itemname | itemmore</span>
                         <div class='panel-item'>
-                            Recent
+                            <div class='itemhead'>
+                                <div class='itemname'>Recent</div>
+                                <div class='itemmore'><span class='colorattr'>View all&nbsp;&nbsp;></span></div>
+                            </div>
                             <div class='cardbox'>
                                 <div class='cardset'>word_1</div>
                                 <div class='cardset'>word_2</div>
@@ -121,8 +38,12 @@
                                 <div class='cardset'>word_6</div>
                             </div>
                         </div>
+                        <span class='small'>itemhead | itemname | itemmore</span>
                         <div class='panel-item'>
-                            Similar sets
+                            <div class='itemhead'>
+                                <div class='itemname'>Because you studied sets by quizlet-user</div>
+                                <div class='itemmore'>&nbsp;&nbsp;1/3&nbsp;&nbsp;<&nbsp;&nbsp;></div>
+                            </div>
                             <div class='cardbox'>
                                 <div class='cardset'>word_1</div>
                                 <div class='cardset'>word_2</div>
