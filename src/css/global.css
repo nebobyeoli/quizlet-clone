@@ -9,7 +9,6 @@ body {
     background-color: ghostwhite;
 
     font-family: 'SeoulNamsan';
-    font-weight: 200;
 
     --ribbon-height: 5rem;
 }
@@ -83,6 +82,8 @@ div.ribbon-top span.pipe {
 }
 
 div.panel-left {
+    font-weight: 200;
+
     min-width: 17rem;
     font-size: .95rem;
     background-color: white;
@@ -129,6 +130,35 @@ div.panel-left div.panel-attr:hover {
 
 div.panel-center {
     display: block;
-    padding: 2rem;
-    width: 100%;
+    padding: 2.6rem;
+    /* padding: 2.6rem 0 0 max(2.6rem, 15%); */
+    width: 55%;
+    border: 1px solid black;
+}
+
+div.panel-center div.panel-item {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2.2rem;
+    /* width: 60vw; */
+}
+
+div.panel-center div.cardbox {
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 80%; */
+    /* align-content: space-between; */
+    /* justify-content: space-between; */
+
+    border: 1px solid coral;
+    margin-top: 1rem;
+}
+
+div.panel-center div.cardset {
+    width: min(18rem, 45%);
+    /* width: 28vw; */
+    height: 9.4rem;
+    margin: 0 .6rem .6rem 0;
+
+    border: 1px dotted blueviolet;
 }
