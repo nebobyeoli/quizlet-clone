@@ -102,6 +102,31 @@ div.panel-center div.cardset {
     /* width: 28vw; */
     height: 9.4rem;
     margin: 0 .6rem .6rem 0;
+    position: relative;
 
     border: 1px dotted blueviolet;
+}
+
+div.panel-center div.cardset-title {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+
+    border: 1px dotted gray;
+}
+
+div.panel-center div.n-terms {
+    margin-top: .8rem;
+
+    font-size: 1rem;
+
+    border: 1px dotted gray;
+}
+
+div.panel-center div.cardset-creator {
+    position: absolute;
+    bottom: 1.5rem;
+
+    font-size: 1rem;
+
+    border: 1px dotted gray;
 }
