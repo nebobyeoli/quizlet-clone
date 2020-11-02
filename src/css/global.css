@@ -211,7 +211,7 @@ div.panel-center div.cardset-title {
     font-weight: 400;
     line-height: 1.2rem;
 
-    border: 1px dotted;
+    /* border: 1px dotted; */
 }
 
 div.panel-center div.n-terms {
@@ -221,7 +221,7 @@ div.panel-center div.n-terms {
     font-weight: 300;
     color: rgba(var(--box-shadow-rgb), 1);
 
-    border: 1px dotted;
+    /* border: 1px dotted; */
 }
 
 div.panel-center div.cardset-creator {
@@ -231,7 +231,7 @@ div.panel-center div.cardset-creator {
     font-size: 1rem;
     font-weight: 400;
 
-    border: 1px dotted hotpink;
+    /* border: 1px dotted hotpink; */
 }
 
 div.panel-center div.cardset-creator span.usericon {
