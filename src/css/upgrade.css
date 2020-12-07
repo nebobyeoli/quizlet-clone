@@ -1,9 +1,37 @@
 div.panel-center.upgrade-page {
     width: 100%;
+    padding: 0;
 }
 
-div.panel-center div.upgrade-slapfront {
+div.panel-center div.upgrade-slap {
     text-align: center;
+}
+
+div.upgrade-slap div.whiteout, div.upgrade-slap div.frontout {
+    padding: 3rem 0 3rem 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+div.upgrade-slap div.whiteout {
+    background-color: white;
+}
+
+span.accent {
+    position: relative;
+}
+
+span.accent svg { /* span::after */
+    position: absolute;
+    width: 104%;
+    top: 84%;
+}
+
+span.accent._1 svg {
+    left: -5%;
+}
+
+span.accent._2 svg {
+    left: -1%;
 }
 
 h1 {
@@ -25,6 +53,14 @@ p {
 b p {
     font-weight: 600;
     font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+div.upgrade-slap span.svgwrap {
+    display: flex;
+    padding-right: 2rem;
 }
 
 p.hide {
@@ -35,54 +71,66 @@ p.hide {
 }
 
 p.br {
-    margin: 3rem;
+    display: flex;
+    margin: 1.5rem;
 }
 
-div.upgrade-slapfront div.align {
+div.upgrade-slap div.align {
     width: 80%;
     display: block;
     text-align: left;
     margin: auto;
 }
 
-div.upgrade-slapfront div.align div {
+div.upgrade-slap div.align div {
     display: flex;
     align-items: center;
 }
 
-div.upgrade-slapfront div.align div.p {
+div.upgrade-slap div.align div.p {
     display: block;
 }
 
-div.upgrade-slapfront div.align p {
+div.upgrade-slap div.align p {
     line-height: 2rem;
 }
 
-div.upgrade-slapfront div.align img {
+div.upgrade-slap div.align img {
     display: flex;
-    margin: 1rem 4rem 1rem 6rem;
-    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    border-radius: 2rem;
 }
 
-div.upgrade-slapfront button {
+div.upgrade-slap div.align img.right {
+    margin-left: 6rem;
+    margin-right: 0;
+}
+
+div.upgrade-slap div.align img.left {
+    margin-left: 0;
+    margin-right: 6rem;
+}
+
+div.upgrade-slap button {
+    font-size: 1.1rem;
     padding: 1rem 2rem;
-    font-size: 1rem;
     border-radius: .4rem;
     cursor: pointer;
 }
 
-div.upgrade-slapfront button.button-attr {
+div.upgrade-slap button.button-attr {
     color: var(--attr-color);
     transition: var(--transition-attr);
-    background-color: none;
+    border: 3px solid rgba(0, 0, 0, .1);
+    background-color: white;
     cursor: pointer;
 }
 
-div.upgrade-slapfront button.button-attr:hover {
+div.upgrade-slap button.button-attr:hover {
     color: var(--attr-hover-color);
 }
 
-div.upgrade-slapfront button.labeled {
+div.upgrade-slap button.labeled {
     right: 6.5rem;
 
     color: white;
@@ -90,7 +138,7 @@ div.upgrade-slapfront button.labeled {
     transition: 300ms;
 }
 
-div.upgrade-slapfront button.labeled:hover {
+div.upgrade-slap button.labeled:hover {
     background-color: var(--attr-color-dark);
     filter: none;
 }

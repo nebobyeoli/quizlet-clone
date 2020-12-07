@@ -4,6 +4,8 @@ const SVGO = require('svgo');
 // Create minified svgs via svgo.optimize
 // SVGO: https://github.com/svg/svgo
 
+// npm run min
+
 const svgo = new SVGO({
     plugins: [
         {cleanupAttrs: true}, {removeDoctype: true}, {removeXMLProcInst: true}, {removeComments: true},
@@ -14,7 +16,7 @@ const svgo = new SVGO({
         {removeNonInheritableGroupAttrs: true}, {removeUselessStrokeAndFill: true}, {removeUnusedNS: true}, {cleanupIDs: true},
         {cleanupNumericValues: true}, {moveElemsAttrsToGroup: true}, {moveGroupAttrsToElems: true}, {collapseGroups: true},
         {removeRasterImages: false}, {mergePaths: true}, {convertShapeToPath: true}, {sortAttrs: true},
-        {removeDimensions: true}, {removeAttrs: {attrs: '(stroke|fill)'}}
+        {removeDimensions: true}, /* {removeAttrs: {attrs: '(stroke|fill)'}} */
     ]
 });
 
@@ -27,8 +29,11 @@ function minifySvg (source, files, dest) {
     })
 }
 
-minifySvg('svgs/full', [
+minifySvg('resources/svgs/full', [
     'quizlet.svg',
     'search.svg',
     'create.svg',
-], 'svgs/min');
+    'span.accent_1.svg',
+    'span.accent_2.svg'
+
+], 'resources/svgs/min');

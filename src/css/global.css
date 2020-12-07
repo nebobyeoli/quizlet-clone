@@ -46,6 +46,7 @@ span.colorattr:hover {
 
 div, button {
     font-family: 'SeoulNamsan';
+    outline: none;
     border: none;
 }
 
@@ -94,10 +95,6 @@ div.ribbon-top button {
 
 div.ribbon-top button:hover {
     filter: opacity(60%);
-}
-
-div.ribbon-top button:focus {
-    outline: none;
 }
 
 div.ribbon-top button.quizlet {
