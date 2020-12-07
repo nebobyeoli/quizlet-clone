@@ -107,22 +107,15 @@ appendSVG('span#classes .svgwrap', {
     'M0 14.375C0 12.0475 4.84544 10.875 7.27271 10.875C9.69998 10.875 14.5454 12.0475 14.5454 14.375V16.125C14.5454 16.6082 14.1384 17 13.6363 17H0.909089C0.407013 17 0 16.6082 0 16.125V14.375ZM1.81818 14.3837V15.25H12.7272V14.375C12.5454 13.7537 9.72725 12.625 7.27271 12.625C4.81817 12.625 2 13.7537 1.81818 14.3837Z'
 ]);
 
-// User icon placeholder circle svg
+// Append .usericon span
 
-let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-svg.setAttribute('viewBox', '0 0 20 20');
-
-let circle = document.createElementNS(svg.namespaceURI, 'circle');
-circle.setAttribute('cx', '10');
-circle.setAttribute('cy', '10');
-circle.setAttribute('r', '10');
-
-svg.appendChild(circle);
+appendElementAsFirst(document.querySelector('div.ribbon-top div.profile'), 'span', { class: 'va usericon' });
 
 document.querySelectorAll('div.panel-center div.cardset-creator').forEach(target => {
     appendElementAsFirst(target, 'span', { class: 'va usericon' });
 });
 
-document.querySelectorAll('div.panel-center div.cardset-creator span.usericon').forEach(spanEl => {
-    spanEl.innerHTML = svg.outerHTML;
+// Use user icon placeholder image
+document.querySelectorAll('.usericon').forEach(target => {
+    target.innerHTML = `<img style='width: 100%; border-radius: 50%;' src='./resources/profile_placeholder.png'>`;
 });

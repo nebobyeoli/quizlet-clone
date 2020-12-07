@@ -67,6 +67,7 @@ div.ha { /* horizontal align */
 }
 
 div.ribbon-top {
+    position: relative;
     width: 100%;
     height: var(--ribbon-height);
     background-color: darkslateblue;
@@ -95,6 +96,13 @@ div.ribbon-top button:focus {
 
 div.ribbon-top button.quizlet {
     filter: none;
+}
+
+div.ribbon-top div.profile {
+    position: absolute;
+    width: 2.2rem;
+    right: 2.4rem;
+    cursor: pointer;
 }
 
 div.ribbon-top span.pipe {
@@ -171,13 +179,13 @@ div.panel-center div.itemhead {
 }
 
 div.panel-center div.itemname {
-    width: 70%;
+    width: 50%;
     text-align: left;
     /* border: 1px dashed goldenrod; */
 }
 
 div.panel-center div.itemmore {
-    width: 30%;
+    width: 50%;
     text-align: right;
     font-weight: 300;
     /* border: 1px dashed goldenrod; */
@@ -193,7 +201,7 @@ div.panel-center div.cardbox {
 
 div.panel-center div.cardset {
     position: relative;
-    width: min(18rem, 45%);
+    width: max(18rem, 44%); /* need max-width? */
     height: 9.4rem;
     margin: 0 .6rem .6rem 0;
     padding: 1.6rem 1rem;
@@ -236,9 +244,10 @@ div.panel-center div.cardset-creator {
 
 div.panel-center div.cardset-creator span.usericon {
     margin-right: .5rem;
+    width: 1.5rem;
 }
 
-div.panel-center div.cardset-creator span.usericon svg {
+/* div.panel-center div.cardset-creator span.usericon svg {
     width: 1.4rem;
     fill: var(--black-color);
-}
+} */
