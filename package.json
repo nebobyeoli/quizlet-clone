@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"quizlet-clone npm script test\" && exit 1",
+    "test": "echo \"quizlet-clone npm script test\"",
     "min": "node tools/minsvg.js"
   },
   "keywords": [],
