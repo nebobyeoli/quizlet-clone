@@ -46,6 +46,7 @@ span.colorattr:hover {
 
 div, button {
     font-family: 'SeoulNamsan';
+    border: none;
 }
 
 div {

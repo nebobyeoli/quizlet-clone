@@ -1,0 +1,96 @@
+div.panel-center.upgrade-page {
+    width: 100%;
+}
+
+div.panel-center div.upgrade-slapfront {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    line-height: 80%;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 80%;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 60%;
+}
+
+b p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+p.hide {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 40%;
+    opacity: 0.6;
+}
+
+p.br {
+    margin: 3rem;
+}
+
+div.upgrade-slapfront div.align {
+    width: 80%;
+    display: block;
+    text-align: left;
+    margin: auto;
+}
+
+div.upgrade-slapfront div.align div {
+    display: flex;
+    align-items: center;
+}
+
+div.upgrade-slapfront div.align div.p {
+    display: block;
+}
+
+div.upgrade-slapfront div.align p {
+    line-height: 2rem;
+}
+
+div.upgrade-slapfront div.align img {
+    display: flex;
+    margin: 1rem 4rem 1rem 6rem;
+    justify-content: center;
+}
+
+div.upgrade-slapfront button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+div.upgrade-slapfront button.button-attr {
+    color: var(--attr-color);
+    transition: var(--transition-attr);
+    background-color: none;
+    cursor: pointer;
+}
+
+div.upgrade-slapfront button.button-attr:hover {
+    color: var(--attr-hover-color);
+}
+
+div.upgrade-slapfront button.labeled {
+    right: 6.5rem;
+
+    color: white;
+    background-color: var(--attr-color);
+    transition: 300ms;
+}
+
+div.upgrade-slapfront button.labeled:hover {
+    background-color: var(--attr-color-dark);
+    filter: none;
+}
